@@ -91,7 +91,10 @@ def _create_task_tool(tools, subagents: list[SubAgent], model, state_schema):
 
         # Create isolated context with only the task description
         # This is the key to context isolation - no parent history
-        state["messages"] = [{"role": "user", "content": description}]
+        # state["messages"] = [{"role": "user", "content": description}] # original code replaced with below
+        # adding 2 lines below to prevent Errors when subagents try to pass results back to main agent
+        from langchain_core.messages import HumanMessage # new code
+        state["messages"] = [HumanMessage(content=description)] # new code
 
         # Execute the sub-agent in isolation
         result = sub_agent.invoke(state)
