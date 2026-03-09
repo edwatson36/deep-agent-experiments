@@ -425,12 +425,12 @@ Use think_tool to synthesise the findings and identify the most compelling narra
 - Have the career_advisor_agent return output to file as 'tailoring_advice.md'
 **Step 5 — Write materials**
 - Delegate to writer_agent, passing tailoring_advice.md and cv.md as context. 
-- They will write their outputs to an appropriately named file.
+- They will write their outputs to an appropriately named and versioned file eg: tailored_cv_v1.
 **Step 6 — Critical review**
 - Delegate to career_advisor_agent, passing the tailored CV and 'tailoring_advice.md' for context 
-- Once received, write feedback to `cv_feedback.md`.
+- They should write their feedback to an appropriately named and versioned feedback file eg: `cv_feedback_v1.md`.
 **Step 7 — Revise if needed**
-If feedback requires revisions, delegate back to writer_agent with the specific feedback. Repeat steps 6&7 a maximum of 5 times, only if needed. Critically review reflect on the writer_agent output and career_advisor_agent feedback before deciding if further revisions are needed.
+If feedback requires revisions, delegate back to writer_agent with the specific feedback. Repeat steps 6&7 a maximum of {max_iterations}. Only go up to {max_iterations} if needed. Critically review reflect on the writer_agent output and career_advisor_agent feedback before deciding if further revisions are needed.
 **Step 8— Deliver to applicant**
 Present the final contents of `tailored_cv.md` cleanly and nicely formatted to the applicant.
 </Workflow>
