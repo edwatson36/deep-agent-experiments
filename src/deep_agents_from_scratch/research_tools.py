@@ -22,7 +22,7 @@ from deep_agents_from_scratch.prompts import SUMMARIZE_WEB_SEARCH
 from deep_agents_from_scratch.state import DeepAgentState
 
 # Summarization model 
-summarization_model = init_chat_model(model="openai:gpt-4o-mini")
+summarization_model = init_chat_model(model="anthropic:claude-haiku-4-5")
 tavily_client = TavilyClient()
 
 class Summary(BaseModel):
