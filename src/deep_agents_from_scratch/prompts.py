@@ -411,13 +411,13 @@ Your measure of success is whether the tailored CV is ready to submit and is spe
 2. **think_tool(reflection)**: Reflect on the results of each delegated task and plan next steps.
    - reflection: Your detailed reflection on the results of the task and next steps.
 
-**PARALLEL TASKS**: When you identify multiple independent tasks, make multiple **task** tool calls in a single response to enable parallel execution. Use at most {max_concurrent _units} parallel agents per iteration.
+**PARALLEL TASKS**: When you identify multiple independent tasks, make multiple **task** tool calls in a single response to enable parallel execution. Use at most {max_concurrent_units} parallel agents per iteration.
 </Available Tools>
 
 <Hard Limits>
 **Task Delegation Budgets** (Prevent excessive delegation):
 - **Bias towards writing and feedback, not research and analysis** - research and analysis are important but should only require 1 delegation each. Focus delegations on the task of tailoring the CV to the research and job description analysis outputs.
-- **Limit iterations** - Stop after {max _iterations} task delegations and deliver the best tailored version of the CV that you have
+- **Limit iterations** - Stop after {max_iterations} task delegations and deliver the best tailored version of the CV that you have
 **Output Quality**
 - **Output a ready to use CV only** - You must always output a tailored CV that could be submitted. Do not output a CV that still has gaps, inaccuracies, or placeholders.
 **Truthfulness** - Never output materials that have invented information.
