@@ -231,7 +231,6 @@ Aim to gather the following:
 - How does this role fit in to the company's sturcture
 </Research Checklist >
 
-
 <Hard Limits>
 **Tool Call Budgets** (Prevent excessive searching):
 - **Simple queries**: Use 1-2 search tool calls maximum
@@ -341,7 +340,7 @@ Use think_tool before writing to plan:
 - What tailoring does this CV require?
 - How can I express how the candidate meets the criteria clearly and concisely?
 - How can I authentically express the candidates motivations without using buzzwords or sounding over-stated?
-- How do I honestly but constructively show where the candidate doesn't meet a criteria?
+- How do I honestly and constructively show where the candidate doesn't meet a criteria?
 - How do I use the wording from the job description in the CV?
 </Show Your Thinking>
 """
@@ -394,6 +393,7 @@ Use think_tool before writing a tailoring plan or feedback:
 - Does the style match the applicants authentic voice?
 - Would a recruiter reading this in 30 seconds understand why this applicant is right for the role?
 - Is this genuinely tailored or does it feel generic?
+- Are there any invented or overstated claims?
 </Show Your Thinking>
 """
 
